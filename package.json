@@ -1,0 +1,21 @@
+{
+  "name": "skill-agent-collector",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Collect new AI skills from GitHub, normalize them into skill records, detect new/updated skills daily, and emit agent-update artifacts.",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=23.6"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test \"test/*.test.ts\"",
+    "start": "node src/cli.ts schedule",
+    "collect": "node src/cli.ts collect --source github"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}

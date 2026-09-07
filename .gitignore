@@ -1,0 +1,26 @@
+# --- Dependencies ---
+node_modules/
+
+# --- Machine-local ai-studio SDLC state (regenerable / local-only) ---
+.ai-kit/
+# docs/intel/_run-claim.json
+
+# --- Local research/planning docs (kept local; this repo is code-only) ---
+docs/
+
+# --- Build output ---
+dist/
+build/
+*.tsbuildinfo
+
+# --- Logs ---
+*.log
+npm-debug.log*
+pnpm-debug.log*
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
